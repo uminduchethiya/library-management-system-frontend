@@ -22,7 +22,7 @@ import {
   selectSelectedUser,
   selectSearchTerm,
   clearError,
-  type User, // Changed to type-only import
+  type User, 
 } from "../../store/userSlice";
 
 const Users = () => {
@@ -148,7 +148,7 @@ const Users = () => {
             <table className="min-w-full text-sm text-left">
               <thead className="bg-gray-50 border-b border-gray-200">
                 <tr>
-                  {/* Mobile: Show only Name, Email, Actions */}
+                  
                   <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-tight">
                     Name
                   </th>
@@ -156,7 +156,7 @@ const Users = () => {
                     Email
                   </th>
 
-                  {/* Desktop: Show additional columns */}
+                 
                   <th className="hidden md:table-cell px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-tight">
                     User ID
                   </th>

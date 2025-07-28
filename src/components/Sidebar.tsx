@@ -28,8 +28,6 @@ const Sidebar: React.FC<SidebarProps> = ({
   const location = useLocation();
 
   const handleLogoutClick = () => {
-    // Note: localStorage is not supported in Claude artifacts
-    // In a real app, you would use: localStorage.removeItem("token");
     navigate("/");
   };
 

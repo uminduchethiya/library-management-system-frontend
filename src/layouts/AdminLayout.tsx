@@ -6,18 +6,18 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
 
-  // Handle responsive behavior
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) {
-        // Desktop: sidebar should be open by default
+        
         setIsSidebarOpen(true);
-        // Auto-collapse on smaller desktop screens for more space
+        
         if (window.innerWidth < 1280) {
           setIsSidebarCollapsed(true);
         }
       } else {
-        // Mobile/Tablet: sidebar should be closed by default
+       
         setIsSidebarOpen(false);
         setIsSidebarCollapsed(false);
       }
@@ -63,7 +63,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
             <h1 className="text-base sm:text-lg font-semibold text-gray-800 truncate">
               Admin Panel
             </h1>
-            <div className="w-9 sm:w-10" /> {/* Spacer for centering */}
+            <div className="w-9 sm:w-10" /> 
           </div>
         </div>
 

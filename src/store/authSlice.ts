@@ -3,9 +3,10 @@ import { createSlice } from '@reduxjs/toolkit';
 interface AuthState {
   isAuthenticated: boolean;
   user: null | {
-    id: number;        // Add userId here
+    id: number;     
     email: string;
     role: string;
+    name: string;
   };
 }
 

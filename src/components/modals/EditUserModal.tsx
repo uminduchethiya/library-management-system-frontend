@@ -217,8 +217,7 @@ const EditUserModal: React.FC<EditUserModalProps> = ({ isOpen, onClose, user, on
                 <option value="">Select a role</option>
                 <option value="Admin">Admin</option>
                 <option value="User">User</option>
-                <option value="Editor">Editor</option>
-                <option value="Moderator">Moderator</option>
+        
               </select>
               {errors.role && (
                 <p className="mt-1 text-xs text-red-600">{errors.role}</p>
