@@ -28,7 +28,7 @@ cd library-frontend
 
 2.Install dependencies
 npm install
-# or
+or
 yarn install
 
 3. Key Libraries Used
@@ -49,6 +49,6 @@ react-router-dom – client-side routing (npm install react-router-dom)
 
 4 Run the App
 npm run dev
-# or
+or
 yarn dev
 
