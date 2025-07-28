@@ -1,69 +1,54 @@
-# React + TypeScript + Vite
+Frontend – Library Management System (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technology Stack
+Language: TypeScript
 
-Currently, two official plugins are available:
+Framework: React (with Vite )
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Styling: Tailwind CSS
 
-## Expanding the ESLint configuration
+State Management: Redux Toolkit
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Icons: lucide-react
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+UI Feedback: SweetAlert2 (sweetalert2)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Code Editor: Visual Studio Code
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Make sure you have
+Node.js (v16 or higher recommended)
+npm or Yarn
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Installation
+1.Clone the repository
+git clone https://github.com/uminduchethiya/library-management-system-frontend.git
+cd library-frontend
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.Install dependencies
+npm install
+# or
+yarn install
+
+3. Key Libraries Used
+
+react-redux, @reduxjs/toolkit – for global state( npm install react-redux @reduxjs/toolkit)
+
+axios – API calls (	npm install axios)
+
+tailwindcss – utility-first CSS (npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p)
+
+lucide-react – modern icon set (npm install lucide-react)
+
+sweetalert2 – alert modals (used for success/error messages) (npm install sweetalert2)
+
+react-router-dom – client-side routing (npm install react-router-dom)
+
+
+4 Run the App
+npm run dev
+# or
+yarn dev
+
