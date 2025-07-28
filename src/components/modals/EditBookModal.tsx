@@ -125,14 +125,13 @@ export const EditBookModal: React.FC<EditBookModalProps> = ({
             >
               <option value="">Select book type</option>
               <option value="Fiction">Fiction</option>
-              <option value="Non-Fiction">Non-Fiction</option>
-              <option value="Science Fiction">Science Fiction</option>
+              <option value="NonFiction">NonFiction</option>
+              <option value="Technology">Technology</option>
               <option value="Romance">Romance</option>
               <option value="Mystery">Mystery</option>
               <option value="Biography">Biography</option>
               <option value="History">History</option>
-              <option value="Self-Help">Self-Help</option>
-              <option value="Educational">Educational</option>
+              <option value="Science">Science</option>
               <option value="Children">Children</option>
             </select>
           </div>
